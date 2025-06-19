@@ -1,0 +1,177 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;  /* Light blue background */
+    color: #333;  /* Dark text color */
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    display: flex;
+    flex-direction: column; /* So the footer stays at the bottom of the page */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #0288d1; /* Deep blue for the header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section with Ocean Background */
+.splash-page {
+    background-image: url('images/ocean_3.jpg');  /* Replace with your ocean background image */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.splash-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.splash-content p {
+    font-size: 1.2rem;
+}
+
+/* Related Pages Section */
+.related-pages {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #b3e5fc; /* Light blue background for related pages */
+}
+
+.related-pages h2 {
+    margin-bottom: 20px;
+    color: #0288d1; /* Deep blue color for the title */
+}
+
+.related-pages .card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.related-pages .card {
+    background-color: white;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.related-pages .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.related-pages .card:hover {
+    transform: scale(1.05);
+}
+
+.related-pages .card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0288d1; /* Deep blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.related-pages .card a:hover {
+    text-decoration: underline;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 20px;
+    flex-wrap: wrap;  /* Allows wrapping on smaller screens */
+}
+
+/* Style for Each Individual Card */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image inside each card */
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Hover effect for the cards */
+.card:hover {
+    transform: scale(1.05);  /* Slight zoom effect when hovered */
+}
+
+/* Style for the card's link (button) */
+.card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b3e5fc; /* Deep blue button */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #0277bd; /* Darker blue when hovered */
+}
+
+/* Bottom Page Editor Bar (Footer) */
+footer {
+    background-color: #0288d1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Changed from fixed to relative */
+    margin-top: auto; /* Ensures the footer stays at the bottom if content is smaller */
+}
+
+.page-editor p {
+    margin: 0;
+    font-size: 1rem;
+}
